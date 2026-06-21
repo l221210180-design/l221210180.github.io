@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITAO Scientific Laboratory</title>
+
+```
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+```
+
+</head>
+
+<body>
+
+```
+<header>
+
+    <nav>
+        <div class="logo">🧪 ITAO LAB</div>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#safety">Safety</a></li>
+            <li><a href="#equipment">Equipment</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h1>Scientific Laboratory Information Portal</h1>
+
+        <h2>Instituto Tecnológico de Álvaro Obregón</h2>
+
+        <p>
+            Promoting safe, responsible, and efficient use of laboratory
+            equipment, materials, and facilities through a modern digital
+            platform available 24/7.
+        </p>
+
+        <a href="#about" class="btn">Explore Laboratory</a>
+    </div>
+
+</header>
+
+<section id="about">
+
+    <h2 class="title">About Our Laboratory</h2>
+
+    <p class="text">
+        This platform provides students and teachers with essential
+        information regarding laboratory safety, proper equipment handling,
+        laboratory rules, and facility care. It is available 24/7 and
+        promotes a paperless educational environment.
+    </p>
+
+</section>
+
+<section id="safety">
+
+    <h2 class="title">🛡 Laboratory Safety Rules</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🥼 Wear PPE</h3>
+            <p>Always use lab coats, gloves, and safety goggles when required.</p>
+        </div>
+
+        <div class="card">
+            <h3>🚫 No Food</h3>
+            <p>Eating and drinking inside the laboratory is prohibited.</p>
+        </div>
+
+        <div class="card">
+            <h3>⚠ Follow Instructions</h3>
+            <p>Always follow teacher and laboratory supervisor instructions.</p>
+        </div>
+
+        <div class="card">
+            <h3>🚨 Report Accidents</h3>
+            <p>Immediately report spills, accidents, or damaged equipment.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="equipment">
+
+    <h2 class="title">🔬 Proper Use of Equipment</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Microscopes</h3>
+            <p>Handle carefully and store properly after use.</p>
+        </div>
+
+        <div class="card">
+            <h3>Glassware</h3>
+            <p>Inspect laboratory glassware before conducting experiments.</p>
+        </div>
+
+        <div class="card">
+            <h3>Balances</h3>
+            <p>Use precision equipment responsibly and keep it clean.</p>
+        </div>
+
+        <div class="card">
+            <h3>Chemicals</h3>
+            <p>Follow all handling and storage procedures for chemical substances.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="facilities">
+
+    <h2 class="title">🏢 Care of Laboratory Facilities</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Clean Work Areas</h3>
+            <p>Leave workstations clean and organized after every practice.</p>
+        </div>
+
+        <div class="card">
+            <h3>Protect Furniture</h3>
+            <p>Avoid damaging tables, chairs, cabinets, and laboratory infrastructure.</p>
+        </div>
+
+        <div class="card">
+            <h3>Waste Disposal</h3>
+            <p>Dispose of laboratory waste according to established procedures.</p>
+        </div>
+
+        <div class="card">
+            <h3>Environmental Care</h3>
+            <p>Promote sustainability through responsible resource usage.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="benefits">
+
+    <h2 class="title">📊 Benefits of the Information System</h2>
+
+    <div class="chart-container">
+        <canvas id="myChart"></canvas>
+    </div>
+
+</section>
+
+<footer>
+
+    <h3>Instituto Tecnológico de Álvaro Obregón</h3>
+
+    <p>Scientific Laboratory Information Portal</p>
+
+    <p>Available 24/7 • Paperless System</p>
+
+</footer>
+```
+
+<script>
+
+const ctx = document.getElementById('myChart');
+
+new Chart(ctx, {
+    type: 'pie',
+    data: {
+        labels: [
+            'Laboratory Safety',
+            'Proper Equipment Use',
+            'Facility Care',
+            'Paperless Information'
+        ],
+        datasets: [{
+            data: [40,25,20,15],
+            backgroundColor: [
+                '#0077ff',
+                '#00c853',
+                '#ff9800',
+                '#9c27b0'
+            ]
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'bottom'
+            }
+        }
+    }
+});
+
+</script>
+
+</body>
+</html>
